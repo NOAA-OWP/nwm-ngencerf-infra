@@ -1,0 +1,8 @@
+# Copy to backend.hcl (gitignored). Pre-existing NGWPC infra bucket.
+# State key follows NGWPC convention: terraform/{repo}/{env}/terraform.tfstate
+
+bucket       = "ngwpc-infra-sbox"
+key          = "terraform/nwm-ngencerf-infra/sandbox/terraform.tfstate"
+region       = "us-east-1"
+encrypt      = true
+use_lockfile = true

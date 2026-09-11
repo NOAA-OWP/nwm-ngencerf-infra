@@ -1,77 +1,37 @@
-# Compiled source #
-###################
-*.com
-*.class
-*.dll
-*.exe
-*.o
-*.so
-_site/
+# Terraform
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+crash.log
+crash.*.log
+*.tfvars
+*.tfvars.json
+!*.tfvars.example
 
-# Packages #
-############
-# it's better to unpack these files and commit the raw source
-# git has its own built in compression methods
-*.7z
-*.dmg
-*.gz
-*.iso
-*.jar
-*.rar
-*.tar
-*.zip
+# Per-account backend config (filled in after bootstrap)
+backend.hcl
+!backend.hcl.example
 
-# Logs and databases #
-######################
-*.log
-*.sql
-*.sqlite
+# Override files (local-only modifications)
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
 
-# OS generated files #
-######################
+# Provider lock plan binary
+*.tfplan
+
+# CLI config
+.terraformrc
+terraform.rc
+
+# OS
 .DS_Store
-.DS_Store?
-.Spotlight-V100
-.Trashes
-Icon?
-ehthumbs.db
 Thumbs.db
 
-# Vim swap files #
-##################
+# Editors / IDEs
+.idea/
+.vscode/
 *.swp
-
-# Python #
-#################
-*.pyc
-*.egg-info/
-__pycache__/
-*.py[cod]
-.env
-.python-version
-
-# pyenv #
-#########
-.python-version
-
-# Django #
-#################
-*.egg-info
-.installed.cfg
-
-# Unit test / coverage reports
-#################
-htmlcov/
-.tox/
-.coverage
-.cache
-nosetests.xml
-coverage.xml
-
-# Front-End #
-#############
-node_modules/
-bower_components/
-.grunt/
-src/vendor/
-dist/
+*~
